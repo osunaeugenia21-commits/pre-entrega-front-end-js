@@ -1,0 +1,1 @@
+Esta página está desarrollada con fin educativo para presentar en Talento tech. Es parte del trabajo realizado en el curso de Front End JS, donde aprendimos maquetación de páginas web con html y css. La página está inspirada en un ecommerce.

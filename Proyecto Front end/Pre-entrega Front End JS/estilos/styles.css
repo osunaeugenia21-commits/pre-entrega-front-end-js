@@ -1,0 +1,352 @@
+/* ==================== ESTILOS GENERALES ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Ubuntu', sans-serif, Tahoma, Verdana;
+}
+body {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* ==================== HEADER ==================== */
+.encabezamiento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 40px; 
+    background: #d2d5e4;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a4a8bc;
+    background: #fff;
+}
+
+.barra-de-navegacion ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.barra-de-navegacion li {
+    padding: 0 20px;
+}
+
+.barra-de-navegacion li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2f3640;
+    transition: 0.3s ease;
+   font-family:'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.barra-de-navegacion li a:hover,
+.barra-de-navegacion li a.active {
+    color: #7158e2; 
+}
+
+.barra-de-navegacion ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.barra-de-navegacion li {
+    padding: 0 20px;
+}
+
+.barra-de-navegacion li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.barra-de-navegacion li a:hover,
+.barra-de-navegacion li a.active {
+    color: #837ad8;
+}
+.barra-de-navegacion a i.fi {
+    font-size: 30px;
+    }
+.movil {
+    display: none; 
+}
+
+/* ==================== PORTADA ==================== */
+.hero {
+    background-image: url('../imagenes/hero4.jpg');
+    background-color: #f4f6f8;
+    height: 70vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+}
+
+.hero-content h4 {
+    padding-bottom: 15px;
+    font-size: 22px;
+    color: #f3f3fa;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    color: #f3f3fa;
+    font-family:'Rajdhani', sans-serif, Tahoma, Verdana;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #f3f3fa;
+    font-family:'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.hero-content p {
+    font-size: 20px;
+     color: #f3f3fa;
+    margin: 15px 0 20px 0;
+    font-family:'Rajdhani', sans-serif, Tahoma, Verdana;
+}
+
+.hero-content button {
+    background-color: #837ad8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hero-content button:hover {
+    background-color: #837ad8;
+}
+/* ==================== PRODUCTOS ==================== */
+.seccion-productos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.seccion-productos h2 {
+    font-size: 32px;
+    color: #2f3640;
+    font-family:'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.seccion-productos p {
+    color: #718093;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family:'Rajdhani', sans-serif, Tahoma, Verdana;
+    font-size: 20px;
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto {
+    width: 31%; 
+    min-width: 320px; 
+    max-width: 360px;
+    border: 1px solid #dcdde1;
+    border-radius: 20px;
+    padding: 20px; 
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    transition: 0.2s ease;
+    position: relative;
+    background: #fff;
+    text-align: left;
+}
+
+.producto:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius:12px;
+    border:2px solid #dcdde1;
+    background:linear-gradient(135deg, #f8f9fa, #e6e2f0);
+    padding:2px;
+}
+
+.descripcion-del-producto span {
+    color: #718093;
+    font-size: 13px;
+    font-family:'Rajdhani', sans-serif, Tahoma, Verdana;
+}
+
+.descripcion-del-producto h5 {
+    padding-top: 7px;
+    color: #2f3640;
+    font-size: 16px; 
+    font-family:'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.descripcion-del-producto h4 {
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #8c7ae6;
+    font-family:'Ubuntu', sans-serif, Tahoma, Verdana;
+}
+
+.producto .carrito {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    background-color: #e6e2f0;
+    color: #8c7ae6;
+    text-align: center;
+    border: 1px solid #dcdde1;
+}
+
+.producto .carrito:hover {
+    background-color: #8c7ae6;
+    color: #fff;
+}
+.seccion-banner-m1 {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 20px; 
+}
+.seccion-banner-m1 h4 { 
+    font-size: 40px;
+    color: #222;
+    font-family: 'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.seccion-banner-m1 h2 {
+    font-size: 20px;
+    color: #222;
+    font-family: 'Rajdhani', sans-serif, Tahoma, Verdana; 
+}
+
+.seccion-banner-m1 span {
+    font-size: 30px;
+    color: #8c7ae6;
+    font-family: 'Rajdhani',sans-serif, Tahoma, Verdana;
+}
+
+.seccion-banner-m1 button {
+    background-color: #837ad8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.seccion-banner-m1 button:hover {
+    background-color: #7158e2;
+}
+/* ==================== FOOTER y NEWSLETTER ==================== */
+.newsletter-footer {
+    background-color: #dde2e9;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.newsletter-footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+    font-family:'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.newsletter-footer p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    color: #222;
+    font-family:'Rajdhani', sans-serif, Tahoma, Verdana;
+} 
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    padding: 14px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    outline: none;
+    width: 100%;
+    background-color: #ffffff;
+    color: #222;
+}
+
+.newsletter-form input::placeholder {
+    color: #718093;
+}
+
+.newsletter-form button {
+    background-color: #837ad8;
+    color: white;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #7158e2;
+}
+
+.footer-main-content {
+    background-color: #1e2229;
+    color: #d2d5e4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+
+}

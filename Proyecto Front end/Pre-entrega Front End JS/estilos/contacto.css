@@ -1,0 +1,218 @@
+/* ==================== ESTILOS GENERALES ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif, Tahoma, Verdana;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==================== HEADER ==================== */
+.encabezamiento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 40px; 
+    background: #d2d5e4;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #a4a8bc;
+    background: #fff;
+}
+
+.barra-de-navegacion ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.barra-de-navegacion li {
+    padding: 0 20px;
+}
+
+.barra-de-navegacion li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    font-family: 'Dosis', sans-serif, Tahoma, Verdana;
+}
+
+.barra-de-navegacion li a:hover,
+.barra-de-navegacion li a.active {
+    color: #7158e2; 
+}
+
+.barra-de-navegacion a i.fi,
+.barra-de-navegacion a i.fa-solid {
+    font-size: 24px;
+}
+
+.movil {
+    display: none; 
+}
+
+/* ==================== FORMULARIO DE CONTACTO ==================== */
+.contacto-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f4f6f8;
+}
+
+.contacto-card, 
+#formularioContacto {
+    background: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    margin: 40px auto;
+}
+
+.contacto-card h1 {
+    font-size: 32px;
+    color: #2f3640;
+    font-family: 'Dosis', sans-serif, Tahoma, Verdana;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contacto-card p {
+    color: #718093;
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif, Tahoma, Verdana;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#formularioContacto span {
+    font-size: 14px;
+    color: #8c7ae6;
+    font-family: 'Rajdhani', sans-serif, Tahoma, Verdana;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#formularioContacto h2 {
+    font-size: 28px;
+    color: #2f3640;
+    font-family: 'Dosis', sans-serif, Tahoma, Verdana;
+    margin-bottom: 25px;
+}
+
+.form-contacto,
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo-control {
+    width: 100%;
+}
+
+.campo-control input,
+.campo-control textarea,
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    outline: none;
+    background-color: #ffffff;
+    color: #222;
+    font-family: 'Ubuntu', sans-serif;
+    transition: border-color 0.2s ease;
+}
+
+.campo-control input:focus,
+.campo-control textarea:focus,
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    border-color: #8c7ae6;
+}
+
+.campo-control input::placeholder,
+.campo-control textarea::placeholder,
+.form-contacto input::placeholder,
+.form-contacto textarea::placeholder {
+    color: #718093;
+}
+
+#formularioContacto button[type="submit"],
+.form-contacto button {
+    background-color: #837ad8;
+    color: white;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+}
+
+#formularioContacto button[type="submit"]:hover,
+.form-contacto button:hover {
+    background-color: #7158e2;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: #1e2229;
+    color: #d2d5e4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #837ad8;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-contenido p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+}

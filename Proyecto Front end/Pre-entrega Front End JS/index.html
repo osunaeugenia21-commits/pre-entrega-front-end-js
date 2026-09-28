@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Front-end JS</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+    <header class="encabezamiento"> 
+        <!-- Logo de la tienda -->
+        <a href="index.html">
+            <img src="imagenes/logo1.jpg" class="logo" alt="Logo tienda" width="40" height="40">
+        </a>
+        <nav class="barra-de-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="páginas/tienda.html">Tienda</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="páginas/contactos.html">Contacto</a></li>
+                <li>
+                    <a href="páginas/carrito.html">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="movil">
+            <a href="páginas/carrito.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== HERO (Sección de portada) ====================== -->
+        <section class="hero">
+            <div class="hero-content">
+                <h4>¡Hacé el cambio que necesitás!</h4>
+                <h2>Súper ofertas</h2>
+                <h1>En todos los productos</h1>
+                <p>¡Aprovechá los cupones de descuentos de hasta 70%!</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <!-- ===================== PRODUCTOS ====================== -->
+        <section class="seccion-productos seccion-p1">
+            <h2>Electrónica, Moda y Más... Todo en un mismo lugar</h2>
+            <p>Ofertas que no te podés perder</p>
+            <div class="productos-contenedor">
+                
+                <!-- Celular -->
+                <div class="producto">
+                    <img src="imagenes/productos/celular.jpg.jpg" alt="Celular">
+                    <div class="descripcion-del-producto">
+                        <span>Celulares</span>
+                        <h5>Smartphone último modelo</h5>
+                        <h4>$899.99</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Smartphone último modelo" data-precio="899.99" data-imagen="imagenes/productos/celular.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+                <!-- Auriculares -->
+                <div class="producto">
+                    <img src="imagenes/productos/auriculares.jpg" alt="Auriculares">
+                    <div class="descripcion-del-producto">
+                        <span>Audio</span>
+                        <h5>Auriculares inalámbricos</h5>
+                        <h4>$109.99</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Auriculares inalámbricos" data-precio="109.99" data-imagen="imagenes/productos/auriculares.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+                <!-- Proyector -->
+                <div class="producto">
+                    <img src="imagenes/productos/proyector.jpg" alt="Proyector">
+                    <div class="descripcion-del-producto">
+                        <span>Imagen</span>
+                        <h5>Proyector</h5>
+                        <h4>$1.109.99</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Proyector" data-precio="1109.99" data-imagen="imagenes/productos/proyector.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+                <!-- Tablet -->
+                <div class="producto">
+                    <img src="imagenes/productos/tablet.jpg" alt="Tablet">
+                    <div class="descripcion-del-producto">
+                        <span>Tablet</span>
+                        <h5>Tablet</h5>
+                        <h4>$500.000</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Tablet" data-precio="500000" data-imagen="imagenes/productos/tablet.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+                <!-- Smart TV -->
+                <div class="producto">
+                    <img src="imagenes/productos/television.jpg" alt="Smart tv">
+                    <div class="descripcion-del-producto">
+                        <span>Smart tv</span>
+                        <h5>Smart tv</h5>
+                        <h4>$999.99</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Smart TV" data-precio="999.99" data-imagen="imagenes/productos/television.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+                <!-- Mochila -->
+                <div class="producto">
+                    <img src="imagenes/productos/mochila.jpg" alt="Mochila">
+                    <div class="descripcion-del-producto">
+                        <span>Mochila</span>
+                        <h5>Mochila</h5>
+                        <h4>$209.99</h4>
+                    </div>
+                    <a class="carrito" data-nombre="Mochila" data-precio="209.99" data-imagen="imagenes/productos/mochila.jpg">
+                        <i class="fi fi-rs-bags-shopping"></i>
+                    </a>
+                </div>
+
+            </div> <!-- Cierre de productos-contenedor -->
+        </section>
+
+        <!--======================================= BANNER ==========================================-->
+        <section class="seccion-banner-m1">
+            <h4>Ofertas imperdibles</h4>
+            <h2>Hasta <span>70% de descuento</span> Electrónica, Moda y Más... Todo en un mismo lugar.</h2>
+            <button>Ver más</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Newsletter -->
+        <div class="newsletter-footer">
+            <div class="newsletter-container">
+                <h2>¡Suscribite a nuestro newsletter!</h2>
+                <p>Sé parte de nuestra comunidad, recibí todas las noticias y ofertas antes que nadie.</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ingresa tu email" required>
+                    <input type="date" placeholder="dd/mm/aaaa" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-main-content">
+            <p>&copy; 2026 - Todos los derechos reservados | Lavander Studio ecommerce - Osuna Eugenia</p>
+        <br>
+        <div class="container-redes">
+             <i class="fi fi-brands-instagram"></i>
+             <i class="fi fi-brands-facebook"></i>
+             <i class="fi fi-brands-whatsapp"></i>
+        </div>
+    </footer>
+</body>
+</html>
